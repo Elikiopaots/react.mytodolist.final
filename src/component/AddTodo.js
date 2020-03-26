@@ -20,7 +20,7 @@ function AddTodo({ addTodo }) {
         className='addTodo'
         onChange={e => setTitle(e.target.value)}
       />
-      <input type='button' value='Submit' className='btn' />
+      <input type='submit' value='Submit' className='btn' onSubmit={handleSubmit} />
     </form>
   );
 }
